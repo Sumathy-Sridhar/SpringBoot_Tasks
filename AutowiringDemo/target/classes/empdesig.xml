@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    
+<bean id="designation" class="com.srm.autowiring.Designation">
+<property name="design" value="Manager"/>
+</bean>
+<bean id="empbean1" class="com.srm.autowiring.Employee" autowire="byName">
+</bean>
+<bean id="empbean2" class="com.srm.autowiring.Employee" autowire="byType">
+</bean>
+</beans>
